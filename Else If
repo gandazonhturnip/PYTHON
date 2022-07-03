@@ -1,0 +1,14 @@
+from ast import operator
+
+
+nama = input("siapa nama anda?")
+
+if nama == "messi":
+    print("ya, kamu sungguh hebat")
+elif nama == "ganda":
+    print("kamu juga tidak kalah hebat")
+elif nama == "partu":
+    print("ya betul")
+else:
+    print("kamu tidak hebat")
+print("end")
