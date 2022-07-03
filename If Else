@@ -1,0 +1,29 @@
+nama = input("siapa nama anda? ")
+
+# program sebelumnya
+# if kondisi: aksi
+# akhir dari program
+
+# indentation
+
+if nama == "messi":
+    print("kamu hebat sekali")
+    print("kamu juga")
+print(f"terimakasih {nama}")
+
+# else
+if nama == "pagartu":
+    print("kamu hebat sekaliii!")
+else:
+    print("kamu bukan pagartu, kamu biasa aja")
+print("end\n")
+
+# angka
+
+angka = input("masukkan angka = ")
+
+if angka == "100":
+    print("kamu lulus mata pelajaran fisika")
+else:
+    print("kamu harus ikut ulangan")
+print("akhir dari program")
