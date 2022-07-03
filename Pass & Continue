@@ -1,0 +1,27 @@
+from ast import Continue
+
+print("\n==Pass==\n")
+angka = 0
+while angka < 5:
+    angka += 1
+    print("mantappuu")
+    print(f"angka sekarang = {angka}")
+    if angka == 3:
+        pass  # tidak akan dieksekusi
+print("end")
+
+# continue
+
+print("\n==Continue==\n")
+angka = 0
+
+while angka < 5:
+    angka += 1
+    print(f"angka saat ini = {angka}")  # aksi 1
+    if angka == 3:
+        print("excellent")
+        continue  # membuat loop meloncat ke step selanjutnya
+    print("good")  # aksi 2
+
+
+print("end")
