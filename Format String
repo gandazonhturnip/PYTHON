@@ -1,0 +1,70 @@
+from lib2to3.pgen2.token import PLUS
+
+
+nama = "Tri Nisa"
+format_str = f"hello {nama}"
+print(format_str)
+
+# boolean
+boolean = True
+format_str = f"boolean = {boolean}"
+print(format_str)
+
+# angka
+angka = 2022.5
+format_str = f"angka = {angka}"
+print(format_str)
+
+angka = 202.52
+format_str = f"angka = {angka:.1f}"
+print(format_str)
+
+# bilangan bulat
+angka = 20
+format_str = f"bilangan bulat = {angka:d}"
+print(format_str)
+
+# bilangan ordo ribuan
+miliaran = 5000000000
+format_str = f"miliaran = {miliaran:,}"
+print(format_str)
+
+# bilangan desimal
+desimal = 2022.54321
+format_str = f"desimal = {desimal:.2f}"
+print(format_str)
+
+# leading zero
+angka = 2022.54321
+format_str = f"angka = {angka:011.2f}"
+print(format_str)
+
+# menampilkan angka +, -
+plus = 10.12345
+minus = -10
+format_plus = f"plus = {plus:+.2f}"
+format_minus = f"minus = {minus:+d}"
+print(format_plus)
+print(format_minus)
+
+# memformat %
+
+persentasi = 0.0055
+format_str = f"persentasi {persentasi:.3%}"
+print(format_str)
+
+# operasi aritmatika di dalam placeholder
+buku = 5000
+pulpen = 3000
+harga_total = f"harga total = Rp. {buku+pulpen:,}"
+print(harga_total)
+
+# format angka lain as binary, octal, hexadecimal
+angka = 255
+format_binary = f"binary = {bin(angka)}"
+format_octal = f"binary = {oct(angka)}"
+format_hex = f"binary = {hex(angka)}"
+
+print(format_binary)
+print(format_octal)
+print(format_hex)
