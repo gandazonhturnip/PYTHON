@@ -1,0 +1,26 @@
+angka = 0
+
+while angka < 5:
+    angka += 1
+    print(f"angkanya adalah = {angka}")
+    if angka == 4:
+        break
+    print("mantappu")
+print("end")
+
+
+
+
+
+data_int = int(input("perhitungan = "))
+
+angka = 0
+
+while True:
+    angka += 1
+    print(f"count = {angka}")
+
+    if angka == data_int:
+        break
+    print("mantappu")
+print("end")
