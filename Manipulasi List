@@ -1,0 +1,43 @@
+data = ["Pisang", "Apel", "Jeruk", "100"]
+
+# mengambil data
+data_awal = data[0]
+print(f"data awal = {data_awal}")
+
+data_akhir = data[-1]
+print(f"data akhir = {data_akhir}")
+
+
+# mengetahui jumlah data
+panjang_data = len(data)
+print(panjang_data)
+
+# manipulasi list
+
+print(f"data sebelum ditambah = \n{data}")
+
+data.insert(0, "Mangga")
+print(f"data tambah = \n{data}")
+
+# menambah diakhir
+data.append("Salak")
+print(f"data tambah diakhir = \n{data}")
+
+# menambahkan list dengan list
+data_baru = ["True", "Good", "Excelent", "Perfect"]
+data.extend(data_baru)
+print(f"data gabungan = \n{data}")
+
+# merubah data
+data[2] = "Wortel"
+print(f"data rubah = \n{data}")
+
+# meremove data
+data.remove("100")
+print(f"data remove = \n{data}")
+
+# meremove data yang paling belakang
+data_akhir = data.pop()
+print(f"data akhir = \n{data}")
+
+print(data_akhir)
