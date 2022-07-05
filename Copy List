@@ -1,0 +1,33 @@
+# menduplikat list
+
+a = ["Anggur", "Jambu", "Pokat"]
+print(f"a = {a}")
+
+b = a  # pass by reference
+print(f"b = {b}")
+
+a[1] = "Durian"
+print(f"a = {a}")
+print(f"b = {b}")
+
+a.reverse()
+print(f"a = {a}")
+print(f"b = {b}")
+
+print(f"angka hexa a = {hex(id(a))}")
+print(f"angka hexa b = {hex(id(b))}")
+
+print(f"\nmembuat list c dengan a.copy\n")
+c = a.copy()  # full duplikat
+print(f"c = {c}")
+
+print(f"angka hex c = {hex(id(c))}")
+a[0] = "Pepaya"
+print(f"a = {a}")
+print(f"b = {b}")
+print(f"c = {c}")
+
+c[1] = "Jeruk"
+print(f"a = {a}")
+print(f"b = {b}")
+print(f"c = {c}")
