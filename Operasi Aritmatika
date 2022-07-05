@@ -1,0 +1,50 @@
+a = 20
+b = 5
+
+# operasi tambah
+hasil = a + b
+print(a, '+', b, '=', hasil)
+
+# operasi kurang
+hasil = a - b
+print(a, '-', b, '=', hasil)
+
+# operasi kali
+hasil = a * b
+print(a, '*', b, '=', hasil)
+
+# operasi bagi
+hasil = a / b
+print(a, '/', b, '=', hasil)
+
+# operasi eksponen
+hasil = a ** b
+print(a, '**', b, '=', hasil)
+
+# operasi modulus %
+hasil = a % b
+print(a, '&', b, '=', hasil)
+
+# operasi floor division
+hasil = a // b
+print(a, '//', b, '=', hasil)
+
+# prioritas operasi
+
+# ()
+# eksponen
+# perkalian *, /, %, //
+# penjumlahan +, -
+x = 5
+y = 7
+z = 9
+
+hasil = x + y ** z - (y + z) % x // y / z * y
+
+print(x, '+', y, ' **', z, '-', y, '%', x, '//', y, '/', z, '*', y, '=', hasil)
+
+hasil = x*y+z
+print(x, '*', y, '+', z, '=', hasil)
+
+hasil = (y-z) + x
+print(y, '-', z, '+', x, '=', hasil)
