@@ -1,0 +1,27 @@
+
+print(20*"=")
+print("KALKULATOR")
+print(20*"=" + "\n")
+
+angka_1 = float(input("masukkan angka  = "))
+operator = input("operator (+, -, *, /) = ")
+angka_2 = float(input("masukkan angka  = "))
+
+
+# percabangannya
+if operator == "+":
+    hasil = angka_1 + angka_2
+    print(f"hasilnya adalah {hasil} ")
+elif operator == "-":
+    hasil = angka_1 - angka_2
+    print(f"hasilnya adalah {hasil} ")
+elif operator == "*" or operator == "X":
+    hasil = angka_1 * angka_2
+    print(f"hasilnya adalah {hasil} ")
+elif operator == "/":
+    hasil = angka_1 / angka_2
+    print(f"hasilnya adalah {hasil} ")
+else:
+    print("buatkanlah yang bagus boy")
+
+print("end")
