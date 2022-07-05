@@ -1,0 +1,19 @@
+import datetime as dt
+from re import A
+
+print("Silahkan masukkan tahun, \nbulan dan tanggal kelahiran anda")
+Tanggal = int(input("Tanggal : "))
+Bulan = int(input("Bulan \t: "))
+Tahun = int(input("Tahun \t: "))
+tanggal_lahir = dt.date(Tahun, Bulan, Tanggal)
+print(f"Anda lahir pada = {tanggal_lahir}")
+print(f"hari lahir anda adalah = {tanggal_lahir:%A}")
+
+hari_ini = dt.date.today()
+print(f"hari ini tanggal = {hari_ini}")
+print(f"hari ini adalah hari = {hari_ini:%A}")
+umur = hari_ini - tanggal_lahir
+umur_saya = umur.days // 365
+umur_bulan = (umur.days % 365) // 30
+print(f"umur dalam hari = {umur}")
+print(f"umur anda sekarang adalah = {umur_saya} tahun {umur_bulan} bulan")
