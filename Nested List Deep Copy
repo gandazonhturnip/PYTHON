@@ -1,0 +1,45 @@
+from copy import deepcopy
+
+data_0 = [1, 2, 3]
+data_1 = [4, 5, 6]
+
+data_2D = [data_0, data_1]
+data_2D_copy = data_2D.copy()
+
+print(f"data 2D = {data_2D}")
+print(f"data 2D copy = {data_2D_copy}")
+
+# MENGAMBIL DATA
+
+data = data_2D[0]
+print(f"data = {data}")
+
+data = data_2D[0][1]
+print(f"data = {data}")
+
+# mengeluarkan addres
+print(f"addres asli = {hex(id(data_2D))}")
+print(f"addres copy = {hex(id(data_2D_copy))}")
+
+print(f"addres dari member ke-1")
+print(f"addres asli = {hex(id(data_2D[0]))}")
+print(f"addres copy = {hex(id(data_2D_copy[0]))}")
+
+# menggunakan deppcopy
+
+
+data_2D = [data_0, data_1]
+data_2D_deepcopy = deepcopy(data_2D)
+print(data_2D_deepcopy)
+
+print(f"addres asli = {hex(id(data_2D))}")
+print(f"addres deepcopy = {hex(id(data_2D_deepcopy))}")
+
+print(f"addres dari member ke-1")
+print(f"addres asli = {hex(id(data_2D[0]))}")
+print(f"addres deepcopy = {hex(id(data_2D_deepcopy[0]))}")
+
+data_2D[0][1] = 50
+print(f"data 2D = {data_2D}")
+print(f"data 2D copy = {data_2D_copy}")
+print(f"data 2D deep = {data_2D_deepcopy}")
