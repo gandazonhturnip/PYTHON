@@ -1,0 +1,59 @@
+inputUser = float(input(
+    "masukkan angka\nlebih besar dari 0\ndan lebih kecil dari 5\natau\nlebih besar dari 8\ndan lebih kecil dari 11\n"))
+
+# --------0++++++++
+isLebihDari = (inputUser > 0)
+print("angka Lebih Dari  0 =", isLebihDari)
+
+# +++++++++5--------
+isKurangDari = (inputUser < 5)
+print("angka Kurang Dari 5 =", isKurangDari)
+
+# -------8++++++
+isLebihDari = (inputUser > 8)
+print("angka Lebih Dari  8 =", isLebihDari)
+
+# ++++++++11-------
+isKurangDari = (inputUser < 11)
+print("angka kurang Dari 11 =", isKurangDari)
+
+
+# --------0++++++++++5--------8++++++++11--------
+
+isCorrect = inputUser > 0 and inputUser < 5 or inputUser > 8 and inputUser < 11
+print("nilai yang anda masukkan =", isCorrect)
+
+
+# ++++++++0----------5+++++++++8---------11++++++++
+
+inputUser = float(input(
+    "\nmasukkan angka\nkurang dari 0\natau lebih besar dari\n5 dan lebih kecil dari 8\natau lebih besar dari 11\n"))
+
+# ++++++++0-------
+isKurangDari = (inputUser < 0)
+print("isKurangDari 0 =", isKurangDari)
+
+# --------5++++++++
+isLebihDari = (inputUser > 5)
+print("isLebihDari 5 =", isLebihDari)
+
+# ++++++++8--------
+isKurangDari = (inputUser < 8)
+print("isKurangDari 8 =", isKurangDari)
+
+# --------11++++++++
+isLebihDari = (inputUser > 11)
+print("isLebihDari 11 =", isLebihDari)
+
+# ++++++++0----------5+++++++++8---------11++++++++
+isCorrect = inputUser < 0 or inputUser > 5 and inputUser < 8 or inputUser > 11
+print("angka yang anda masukkan =", isCorrect)
+
+
+x = float(input("\nmasukkan angka:"))
+y = 0 < x < 5 or 8 < x < 11
+print("nilainya adalah:", y)
+
+x = float(input("\nmasukkan angka:"))
+y = 0 > x > 5 and 8 > x > 11
+print("nilainya adalah:", y)
