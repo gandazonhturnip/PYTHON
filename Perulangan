@@ -1,0 +1,58 @@
+angka = 15
+
+# dummy variable
+count = 1
+for i in range(angka):
+    print("*"*count)
+    count += 1
+
+count = 1
+while True:
+    print("*" * count)
+    count += 1
+    if count > angka:
+        break
+
+# hanya ganjil saja
+print("awal")
+count = 1
+while True:
+
+    if count % 2:  # print jika ganjil
+        print("*"*count)
+        count += 1
+    else:       # akan kembali keatas jika ganjil
+        count += 1
+        continue
+
+    if count > angka:
+        break
+
+print("akhir")
+count = 1
+spasi = int(angka/2)
+
+while True:
+    if count % 2:
+        print(" "*spasi, "*"*count)
+        spasi -= 1
+        count += 1
+    else:
+        count += 1
+        continue
+    if count > angka:
+        break
+count = angka - 2
+
+spasi = 1
+
+while True:
+    if count % 2:
+        print(" "*spasi, "*"*count)
+        count -= 1
+        spasi += 1
+    else:
+        count -= 1
+        continue
+    if count < 0:
+        break
