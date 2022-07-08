@@ -1,0 +1,73 @@
+# operator dalam bentuk methods
+
+# merubah case dari string
+
+# merubah semua ke uppercase
+
+from ntpath import join
+
+
+salam = "horas"
+print("normal = " + salam)
+salam = salam.upper()
+print("upper = " + (salam))
+
+# merubah semua ke lowercase
+campursari = "dAri SaNa sudAH BegIni"
+print("normal = " + campursari)
+campursari = campursari.lower()
+print("lower = " + str(campursari))
+campursari = campursari.upper()
+print("upper = " + str(campursari))
+
+# pengecekan dengan isX method
+
+# contoh pengecekan lower case
+salam = "kebajikan"
+apakah_lower = salam.islower()
+print("salam + islower = " + str(apakah_lower))
+apakah_upper = salam.isupper()
+print("salam + is upper = " + str(apakah_upper))
+
+# isalpha() = semuanya adalah huruf
+# isalnum () = angka dan huruf
+# isdecimal () = hanya angka
+# isspace () = spasi, tab dll
+# istitle () = semua dimulai huruf besar
+
+judul = "Indonesia Dalam Pesta Demokrasi"
+cek_judul = judul.istitle()
+print("judul" + " is title = " + str(cek_judul))
+
+# ngecek komponen startswith() dan endwith()
+cek_start = "makan kerupuk".startswith("makan")
+print("makan" + " is starts with = " + str(cek_start))
+
+cek_end = "keripik singkong".endswith("singkong")
+print("singkong " + "is endwith = " + str(cek_end))
+
+# penggabungan komponen join(), split()
+pisah = ['makan', 'nasi', 'goreng']
+gabungan = ','.join(pisah)
+print(pisah)
+print(gabungan)
+
+gabungan = ' '.join(pisah)
+print(gabungan)
+
+gabungan = "makan,nasi,goreng"
+print(gabungan.split(','))
+
+# alokasi karakter rjust, ljust, center
+kanan = "kanan".rjust(10)
+print("'" + kanan + "'")
+kiri = "kiri".ljust(10)
+print("'" + kiri + "'")
+center = "center".center(20, "*")
+print("'" + center + "'")
+
+# kebalikannya = strip()
+center = center.strip("*")
+print("'" + center + "'")
+kanan = kanan.strip()
+print("'" + kanan + "'")
