@@ -1,0 +1,59 @@
+a = "ini adalah string"
+print(a)
+print(type(a))
+
+# cara membuat string
+
+'''
+    1. dengan menggunakan single quote
+    2. dengan menggunakan double quote
+'''
+data = 'menggunakan single quote'
+print(data)
+
+print('menggunakan double quote')
+
+print('"kapan kamu kembali ?"')
+print("ini adalah hari jum'at")
+
+# 2. Menggunakan tanda \
+
+# membuat ' menjadi string
+print('sekarang adalah hari jum\'at')
+print('g\'day isn\'t it?')
+
+# backslash
+print('C:\\user\\nanak')
+
+# tab
+print('main pergi \tjauh sekali')
+
+# backspace
+print('mainnya sangat \bjauh sekali')
+
+# newline
+# LF -> Line Feed = macos, unix, linux
+print('sekarang lagi musim hujan\nsediakan lah payung')
+# CR -> Carriage Return = commodore, acorn, lisp
+print('sekarang lagi musim hujan\rsediakan lah payung')
+# CRLF -> Line Feed Carriage Return = windows
+print('sekarang lagi musim hujan\r\nsediakanlah payung')
+
+# 3. String literal RAW
+
+print(r'C:\new folder')
+
+# multiline literal string
+print("""
+    nama : Nanak
+    kelas : 12
+""")
+
+print(r"""
+nama : Nanak
+kelas : 12 SMA\new 
+website : www.nanak.com/newID
+""")
+
+
+print('"mari semua anak bangsa\nbahu membahu",\nguna menciptakan\nIndonesia sejahtera')
