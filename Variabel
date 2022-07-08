@@ -1,0 +1,25 @@
+# variabel adalah tempat menyimpan data
+
+# membuat assigment/data
+x = 10
+y = 5
+saya = 10000
+
+# pemanggilan pertama
+print(" Nilai x =", x)
+print(" Nilai y =", y)
+print(" Nilai saya =", saya)
+
+# penamaan
+nilai_y = 20  # dengan menggunakan underscore
+juta100 = 100000000  # angka harus dibelakang
+nilaiZ = 20  # boleh
+
+# pemanggilan kedua
+print(" Nilai x =", x)
+x = 8
+print(" Nilai x =", x)
+
+# assigment indirect
+y = x
+print(" Nilai y =", y)
