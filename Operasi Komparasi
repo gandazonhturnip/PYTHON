@@ -1,0 +1,96 @@
+# operasi komparasi
+
+# setiap hasil dari komparasi adalah boolean
+
+# >, <, >=, <=, ==, !=, is, is not
+
+a = 5
+b = 3
+
+# lebih besar dari >
+print('==== lebih besar dari(>)')
+hasil = a > 4
+print(a, '>', 4, '=', hasil)
+hasil = b > 4
+print(b, '>', 4, '=', hasil)
+hasil = b > 3
+print(b, '>', 3, '=', hasil)
+
+# kurang dari <
+print('==== kurang dari(<)')
+hasil = a < 4
+print(a, '<', 4, '=', hasil)
+hasil = b < 4
+print(b, '<', 4, '=', hasil)
+hasil = b < 3
+print(b, '<', 3, '=', hasil)
+
+# lebih besar sama dengan >=
+print('==== lebih besar sama dengan(>=)')
+hasil = a >= 4
+print(a, '>=', 4, '=', hasil)
+hasil = b >= 4
+print(b, '>=', 4, '=', hasil)
+hasil = b >= 3
+print(b, '>=', 3, '=', hasil)
+
+# kurang dari sama dengan <=
+print('==== kurang dari sama dengan(<=)')
+hasil = a <= 4
+print(a, '<=', 4, '=', hasil)
+hasil = b <= 4
+print(b, '<=', 4, '=', hasil)
+hasil = b <= 3
+print(b, '<=', 3, '=', hasil)
+
+# sama dengan ==   # = adalah assigment
+print('==== sama dengan(==)')    # == adalah membandingkan nilai
+a = 5
+b = 3
+hasil = a == 5
+print(a, '==', 5, '=', hasil)
+hasil = b == 5
+print(b, '==', 5, '=', hasil)
+
+# tidak sama dengan !=   # = adalah assigment
+print('==== tidak sama dengan(!=)')    # == adalah membandingkan nilai
+a = 5
+b = 3
+hasil = a != 5
+print(a, '!= ', 5, '=', hasil)
+hasil = b != 5
+print(b, '!=', 5, '=', hasil)
+
+# "is" adalah komparasi objek identity
+print('==== objek identity(is)')
+x = 5  # ini adalah assigment membuat objek
+y = 5
+
+print('nilai x =,', x, ', id = ', hex(id(x)))
+print('nilai x =, ', y, ', id =', hex(id(y)))
+hasil = x is y
+print('x is y  =', hasil)
+
+print('==== objek identity (is)')
+x = 5  # ini adalah assigment membuat objek
+y = 7
+
+print('nilai x =,', x, ', id = ', hex(id(x)))
+print('nilai x =, ', y, ', id =', hex(id(y)))
+hasil = x is y
+print('x is y  =', hasil)
+
+print('==== objek identity(is not)')
+x = 5
+y = 5
+print('nilai x=,', x, ', id =', hex(id(x)))
+print('nilai y=, ', y, ', id =', hex(id(y)))
+hasil = x is not y
+print('x is not y=', hasil)
+
+x = 5
+y = 7
+print('nilai x =,', x, ',id =', hex(id(x)))
+print('nilai y, =,', y, ', id =', hex(id(y)))
+hasil = x is not y
+print('x is y=', hasil)
