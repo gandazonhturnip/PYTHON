@@ -1,0 +1,37 @@
+# widht and multiline
+
+# data
+
+
+data_nama = "trii nanak"
+data_umur = 20
+data_tinggi = 165.5
+data_berat = 60
+
+# string standard
+print("\n"+5*"="+"Data String" + 5*"=")
+data_str = f"nama = {data_nama} umur = {data_umur} tinggi = {data_tinggi} berat = {data_berat}"
+print(data_str)
+
+# string multiline dengan menggunakan enter
+data_str = f"nama = {data_nama}\numur = {data_umur}\ntinggi = {data_tinggi}\nberat = {data_berat}"
+print("\n"+5*"="+"Data String" + 5*"=")
+print(data_str)
+
+# string multiline (kutip triplets)
+data_str = f"""nama = {data_nama}
+umur = {data_umur}
+tinggi = {data_tinggi}
+berat = {data_berat}
+"""
+print("\n"+5*"="+"Data String"+5*"=")
+print(data_str)
+
+# mengatur lebar
+data_str = f"""nama   = {data_nama:>10}
+umur   = {data_umur:>10}
+tinggi = {data_tinggi:>10}
+berat  = {data_berat:>10}
+"""
+print("\n"+5*"="+"Data String"+5*"=")
+print(data_str)
