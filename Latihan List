@@ -1,0 +1,21 @@
+list_buku = []
+
+while True:
+  print("masukkan data")
+  judul = input("masukkan judul : ")
+  penulis = input("masukkan penulis : ")
+  tahun = input("masukkan tahun terbit : ")
+  
+  buku_baru = [judul, penulis, tahun]
+  list_buku.append(buku_baru)
+  
+  print("\n", "="*10, "Daftar Buku", "="*10)
+  for index, buku in enumerate(list_buku):
+    print(f"No: {index} | Judul: {buku[0]} | Penulis: {buku[1]} | Tahun: {buku[2]}")
+    
+  print("\n", "="*20)
+  lanjut = input("apakah masih mau lanjut? (y/n) : ")
+  
+  if lanjut == "n":
+    break
+print("terimakasih")
