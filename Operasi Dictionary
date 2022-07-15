@@ -1,0 +1,37 @@
+from audioop import add
+
+
+data_list = ['makan', 'minum', 'belajar']
+print(data_list[0])
+
+data_dict = {
+    "smlg": "simalungun",
+    "tb": "toba",
+    "kr": "karo"
+}
+
+print(data_dict["smlg"])
+
+lendict = len(data_dict)
+print(f"panjang data dictionary: {lendict}")
+
+# mengecek key exist atau tidak
+key = 'smlg'
+checkkey = key in data_dict
+print(f"apakah {key} ada pada checkkey? : {checkkey}")
+
+# mengakses value (read) dengan get
+print(data_dict['smlg'])
+print(data_dict.get('smlg'))
+print(data_dict.get('cup', 'data tidak ada'))
+
+# mengupdate data
+data_dict['smlg'] = 'indonesia'
+print(data_dict)
+
+data_dict.update({'mkn': 'makan ajalah'})
+print(data_dict)
+
+# mendelete data
+del data_dict['mkn']
+print(data_dict)
