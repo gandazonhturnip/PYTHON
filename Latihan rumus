@@ -1,0 +1,61 @@
+print(10*"=", "akar kuadrat", 10*"=")
+angka = float(input("masukkan angka : "))
+
+akar_kuadrat = angka ** 0.5
+
+print(f"akar kuadratnya : {akar_kuadrat}")
+
+# menghitung luas segitiga
+print(f"\n", "="*10, "Luas Segitiga", "="*10)
+alas = float(input("masukkan nilai alas : "))
+tinggi = float(input("masukkan nilai tinggi : "))
+
+luas_segitiga = (alas * tinggi)/2
+print(f"luas segitiga : {luas_segitiga}")
+
+# menghitung kecepatan
+print(f"\n", 10*"=", "Kecepatan", "="*10)
+jarak = float(input("masukkan jarak : "))
+waktu = float(input("masukkan waktu : "))
+
+kecepatan = jarak / waktu
+print(f"kecepatannya : {kecepatan}")
+
+# celcius, fahrenheit, reamur dan kelvin
+
+print(f"\n", "="*10, "Konversi Suhu", "="*10)
+celsius = float(input("masukkan suhu celcius : "))
+
+fahrenheit = (celsius * 9/5) + 32
+reamur = 4/5 * celsius
+kelvin = celsius + 273
+print(f"suhu dalam fahrenheit : {fahrenheit}")
+print(f"suhu dalam reamur : {reamur}")
+print(f"suhu dalam kelvin : {kelvin}")
+
+fahrenheit = float(input("\nmasukkan suhu fahrenheit : "))
+
+celsius = (5/9) * (fahrenheit - 32)
+reamur = (4/9) * (fahrenheit-32)
+kelvin = 5/9 * (fahrenheit-32) + 273
+print(f"suhu dalam celsius = {celsius}")
+print(f"suhu dalam reamur = {reamur}")
+print(f"suhu dalam kelvin = {kelvin}")
+
+reamur = float(input("\nmasukkan suhu reamur : "))
+
+celsius = 5/4 * reamur
+fahrenheit = 9/4 * reamur + 32
+kelvin = 5/4 * reamur + 273
+print(f"suhu dalam celsius = {celsius}")
+print(f"suhu dalam fahrenheit = {fahrenheit}")
+print(f"suhu dalam kelvin = {kelvin}")
+
+kelvin = float(input("\nmasukkan suhu kelvin : "))
+
+celsius = kelvin + 273
+fahrenheit = (kelvin - 273) * (9/5) + 32
+reamur = (4/5)*(kelvin + 273)
+print(f"suhu dalam celsius = {celsius}")
+print(f"suhu dalam fahrenheit = {fahrenheit}")
+print(f"suhu dalam reamur = {reamur}")
