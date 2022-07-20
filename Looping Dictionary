@@ -1,0 +1,35 @@
+daftar = {
+    "sumut": "sumatera utara",
+    "jkt": "jakarta",
+    "jateng": "jawa tengah",
+    "kalteng": "kalimantan tengah",
+    "ntt": "nusa tenggara timur"
+}
+
+
+# looping first try
+for key in daftar:
+    print(key)
+
+# operator untuk mengambil item/iterables
+keys = daftar.keys()
+print(keys)
+
+for key in daftar.keys():
+    print(daftar.get(key))
+
+
+Values = daftar.values()
+print(Values)
+
+for value in daftar.values():
+    print(value)
+
+items = daftar.items()
+print(items)
+
+for item in daftar.items():
+    print(item)
+
+for key, value in daftar.items():
+    print(f"key = {key}, value = {value}")
