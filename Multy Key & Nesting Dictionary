@@ -1,0 +1,47 @@
+import datetime
+
+Identitas1 = {
+    'nama': 'janggual',
+    'usia': '28',
+    'hobi': 'sepakbola',
+    'no hp': 62822908733,
+    'lahir': datetime.datetime(2001, 8, 17)
+}
+
+Identitas2 = {
+    'nama': 'jatulen',
+    'usia': '30',
+    'hobi': 'raket',
+    'no hp': 62821393837,
+    'lahir': datetime.datetime(2000, 10, 27)
+}
+
+Identitas3 = {
+    'nama': 'sanggar',
+    'usia': '27',
+    'hobi': 'catur',
+    'no hp': 62822354733,
+    'lahir': datetime.datetime(1998, 2, 28)
+}
+
+
+identitasdiri = {
+    'idt01': Identitas1,
+    'idt02': Identitas2,
+    'idt03': Identitas3
+}
+
+
+print(f"{'key':<5} {'nama':<8} {'usia':<7} {'hobi':<10} {'no hp':<12} {'lahir':<10}")
+print(f"="*60)
+
+for identitas in identitasdiri:
+    KEY = identitas
+
+    NAMA = identitasdiri[KEY]['nama']
+    USIA = identitasdiri[KEY]['usia']
+    HOBI = identitasdiri[KEY]['hobi']
+    NOHP = identitasdiri[KEY]['no hp']
+    LAHIR = identitasdiri[KEY]['lahir'].strftime("%x")
+
+    print(f"{KEY:<5} {NAMA:<8} {USIA:^7} {HOBI:<10} {NOHP:<12} {LAHIR:<10}")
