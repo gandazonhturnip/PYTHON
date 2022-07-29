@@ -1,0 +1,26 @@
+import datetime
+import os
+from turtle import clear
+identitas = {
+    'nama': 'janggual',
+    'nim': 120810001,
+    'kelas': 'a01',
+    'tanggal_lahir': datetime.datetime(2000, 11, 20)
+}
+
+
+identitas = {}
+os.system("cls")
+print(f"{'WELCOME':^20}")
+print(f"{'DATA MAHASISWA':^20}")
+print("="*20)
+
+mahasiswa = dict.fromkeys(identitas.keys())
+mahasiswa['nama'] = input("nama mahasiswa: ")
+mahasiswa['nim'] = input("nim mahasiswa: ")
+mahasiswa['kelas'] = input("kelas mahasiswa: ")
+tahun_lahir = int(input("tahun lahir (yyyy): "))
+bulan_lahir = int(input("bulan lahir (1-12): "))
+tanggal_lahir = int(input("tanggal lahir (1-31): "))
+mahasiswa['lahir'] = datetime.datetime(tahun_lahir, bulan_lahir, tanggal_lahir)
+print(mahasiswa)
