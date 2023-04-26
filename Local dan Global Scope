@@ -1,0 +1,72 @@
+nama_global = "janggual"
+
+# akses variabel global dalam fungsi
+
+
+def fungsi():
+    print(f"hallo {nama_global}")
+
+
+fungsi()
+
+# akses variabel global dalam loop
+for i in range(0, 7):
+    print(f"loop {i} - {nama_global}")
+
+# percabangan
+if True:
+    print(f"tampilkanlah {nama_global}")
+
+# variabel local scope
+
+
+def fungsi2():
+    nama_local = "ramba"
+
+
+fungsi2()
+# print(nama_local) # tidak bisa dioperasikan
+
+# contoh 1 : penggunaan akses variabel
+
+
+def hallo():
+    print(f"hay hay hay {nama}")
+
+
+nama = "janggual"
+
+hallo()
+
+# contoh 2 :  merubah variabel global
+angka = 0
+nama = "janggual"
+
+
+def ubah(nilai_baru, nama_baru):
+    global angka  # fungsi ini mendapat akses merubah angka
+    global nama
+    angka = nilai_baru
+    nama = nama_baru
+
+
+print(f"sebelum = {angka, nama}")
+ubah(10, "ramba")
+print(f"sesudah = {angka, nama}")
+
+# contoh 3: menggunakan for dan if masih bisa mengakses dari dalam berbeda dengan di fungsi
+angka = 0
+
+for i in range(0, 6):
+    angka += i
+    angka_dummy = 0
+
+print(angka)
+print(angka_dummy)
+
+if True:
+    angka = 10
+    angka_dummy = 10
+
+print(angka)
+print(angka_dummy)
