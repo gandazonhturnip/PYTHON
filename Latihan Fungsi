@@ -1,0 +1,56 @@
+import os
+
+'''header'''
+
+
+def header():
+    '''fungsi header'''
+    os.system("cls")
+
+    print(f"{'PROGRAM MENGHITUNG LUAS':^30}")
+    print(f"{'DAN KELILING PERSEGI PANJANG':^30}")
+    print(f"{'-'*30:^30}")
+
+
+def input_user():
+    '''fungsi input user'''
+    lebar = int(input("masukkan nilai lebar : "))
+    panjang = int(input("masukkan nilai panjang : "))
+    return lebar, panjang
+
+
+def hitung_luas(lebar, panjang):
+    '''fungsi luas'''
+    return panjang*lebar
+
+
+def hitung_keliling(lebar, panjang):
+    '''fungsi keliling'''
+    return 2 * (lebar+panjang)
+
+
+def display(lebar, panjang):
+    '''fungsi display'''
+    print(f"hasil perhitungan {lebar} = {panjang}")
+
+
+# program utama
+while True:
+    header()
+    opsi = input("apa yang mau dihitung (l/k)? ")
+    LEBAR, PANJANG = input_user()
+    LUAS = hitung_luas(LEBAR, PANJANG)
+    KELILING = hitung_keliling(LEBAR, PANJANG)
+    if opsi == "l":
+        print(f"luas = {LUAS}")
+    if opsi == "k":
+        print(f"keliling = {KELILING}")
+
+    display("luas", LUAS)
+    display("keliling", KELILING)
+
+    isContinue = input("apakah mau lanjut (y/n)? ")
+    if isContinue == "n":
+        break
+
+print("program selesai, terimakasih")
