@@ -1,0 +1,39 @@
+'''default fungsi argument'''
+
+# def fungsi(argument):
+# def fungsi(argument = nilai defaultnya):
+
+# contoh 1
+def say_hello(nama="longgur"):
+    '''default fungsi argument'''
+    print(f"hallo {nama}")
+
+
+say_hello("janggual")
+say_hello()
+
+# contoh 2
+def sapa_dia(nama, pesan="apa kabar?"):
+    print(f"hallo {nama} {pesan}")
+
+
+sapa_dia("ramba", "bagaimana hari ini ?")
+sapa_dia("sinta")
+
+# contoh 3
+def bilangan_pangkat(angka, pangkat):
+    hasil = angka**pangkat
+    return hasil
+
+
+print(bilangan_pangkat(2, 5))
+hasil = bilangan_pangkat(angka=5, pangkat=3)
+print(hasil)
+
+# contoh 4
+def fungsi(input1=1, input2=2, input3=3, input4=4):
+    hasil = input1 + input2 + input3 + input4
+    return hasil
+
+print(fungsi())
+print(fungsi(input2=10, input3=20))
