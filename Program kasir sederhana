@@ -1,0 +1,12 @@
+def get_login():
+    print("="*20)
+    print("Halaman Login Kasir")
+    username = input("Masukkan username : ")
+    password = input("Masukkan password : ")
+    if username == "kasir" and password == "123456":
+        print("Login Berhasil")
+    else:
+        print("Silahkan ulang kembali")
+
+
+get_login()
