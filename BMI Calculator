@@ -1,0 +1,20 @@
+def bodymassindex(height, weight):
+    return round((weight / height**2), 2)
+
+
+h = float(input("Enter your height in meters: "))
+w = float(input("Enter your weight in kg: "))
+
+print("Welcome to BMI Calculator")
+
+bmi = bodymassindex(h, w)
+print("Your BMI is : ", bmi)
+
+if bmi <= 18.5:
+    print("cungkring")
+elif 18.5 < bmi <= 24.9:
+    print("normal")
+elif 25 < bmi <= 29.29:
+    print("Berlebih")
+else:
+    print("you obesitas")
